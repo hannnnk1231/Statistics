@@ -33,6 +33,7 @@ theta = np.arange(0,25, 0.1)
 theta_y = [score_func(x, _theta) for _theta in theta]
 plt.plot(theta, theta_y, '-')
 plt.title("Score function")
+plt.savefig('fig1')
 plt.show()
 
 # Section C
@@ -45,6 +46,7 @@ plt.step(x_empirical, y_empirical)
 plt.grid(color='#D1D1D1', linestyle='dotted')
 plt.xlabel("X")
 plt.ylabel("Cumulative Probability")
+plt.savefig('fig2')
 plt.show()
 
 # Section D
@@ -61,6 +63,7 @@ plt.plot(x_45, y_45, 'k-')
 plt.grid(color='#D1D1D1', linestyle='dotted')
 plt.xlabel("Rayleigh(7.87289) theoretical quantiles")
 plt.ylabel("Data quantiles")
+plt.savefig('fig3')
 plt.show()
 
 # %%
